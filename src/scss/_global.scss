@@ -5,12 +5,16 @@ body {
 .wrapper {
 	min-height: 100vh;
 	min-width: 375px;
-	position: relative;
-	overflow: hidden;
+  	position: relative;
 }
+
 
 .container {
 	max-width: 1605px;
 	margin: 0 auto;
-	padding: 0 82,5px;
+	padding: 0 82.5px;
+}
+
+.bg {
+	background: url(../../src/image/Background.jpg) center / cover no-repeat;
 }
