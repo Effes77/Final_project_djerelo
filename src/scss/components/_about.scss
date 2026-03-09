@@ -1,0 +1,33 @@
+.about-section {
+    margin-bottom: 100px;
+
+    &__title {
+        font-size: $h2-fz;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__container {
+        display: flex;
+        gap: 20px;
+
+        &--left {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 50%;
+            font-size: $h3-fz;
+            font-weight: 700;
+        }
+
+        &--right {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            font-size: $second-fz;
+            width: 50%;
+        }
+    }
+
+
+}

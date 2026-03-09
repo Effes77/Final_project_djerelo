@@ -138,8 +138,8 @@
               <li><a href="#">ukr</a></li>
             </ul>
           </div>
-          <nav class="header__nav">
-            <ul>
+          <nav>
+            <ul class="header__nav">
               <li><a href="#">Наші напрямки </a></li>
               <li><a href="#">Наші партнери</a></li>
               <li><a href="#">Звіти</a></li>
@@ -153,39 +153,44 @@
         <div class="bg">
           <section class="hero-section">
             <div class="container">
-              <h1>Українська Асоціація «Джерело»</h1>
-              <p>
+              <h1 class="hero-section__title">
+                Українська Асоціація «Джерело»
+              </h1>
+              <p class="hero-section__text">
                 Розвиток та підтримка української діаспори в Каталонії, Іспанії
                 з 2012 року
               </p>
-              <a href="#">Зв’язатись</a>
-              <a href="#">Підтримати </a>
+              <div class="hero-section__buttons">
+                <a class="btn base-btn" href="#">Зв’язатись</a>
+                <a class="btn additional-btn" href="#">Підтримати </a>
+              </div>
             </div>
           </section>
-          <section>
-            <ul>
+          <section class="running-line">
+            <ul class="running-line__list">
               <li>Допомагаємо</li>
               <li>Консультуємо</li>
               <li>Розвиваємо</li>
               <li>Iнтегруємо</li>
             </ul>
           </section>
-          <section>
+          <section class="about-section">
             <div class="container">
-              <h2>Хто ми та що робимо</h2>
-              <div>
-                <div>
+              <h2 class="about-section__title">Хто ми та що робимо</h2>
+              <div class="about-section__container">
+                <div class="about-section__container--left">
                   <p>
-                    <span>Наша мета:</span> сформувати позитивний імідж України
-                    як сучасної та привабливої європейської країни.
+                    <span class="accent">Наша мета:</span> сформувати позитивний
+                    імідж України як сучасної та привабливої європейської
+                    країни.
                   </p>
                   <p>
-                    <span>Наша місія:</span> розвиток української діаспори в
-                    Іспанії задля зміцнення міжнародних зв'язків України та
-                    Іспанії.
+                    <span class="accent">Наша місія:</span> розвиток української
+                    діаспори в Іспанії задля зміцнення міжнародних зв'язків
+                    України та Іспанії.
                   </p>
                 </div>
-                <div>
+                <div class="about-section__container--right">
                   <p>
                     Ольга Дзюбан заснувала Асоціацію «Джерело» у 2012 році задля
                     допомоги українцям.
@@ -205,11 +210,13 @@
               </div>
             </div>
           </section>
-          <section>
+          <section class="targets-section">
             <div class="container">
-              <div>
-                <h2>Основними цілями діяльності Асоціації є:</h2>
-                <ul>
+              <div class="targets-section__text-box">
+                <h2 class="targets-section__title">
+                  Основними цілями діяльності Асоціації є:
+                </h2>
+                <ul class="targets-section__list">
                   <li>
                     Розвиток українських освітніх, культурних, соціальних та
                     екологічних проєктів
@@ -232,10 +239,16 @@
                   </li>
                 </ul>
               </div>
-              <div>
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+              <div class="targets-section__img-box">
+                <img
+                  src="./src/image/Round dance.jpg"
+                  alt="Ukraine traditional round dance"
+                />
+                <img
+                  src="./src/image/Braid hairstyle.jpg"
+                  alt="Ukraine traditional woman hairstyle"
+                />
+                <img src="./src/image/Help Ukraine.jpg" alt="" />
               </div>
             </div>
           </section>

@@ -1,5 +1,7 @@
 body {
   font-family: "Raleway", sans-serif;
+  font-size: $base-fz;
+  line-height: $base-lh;
 }
 
 .wrapper {
@@ -17,4 +19,31 @@ body {
 
 .bg {
 	background: url(../../src/image/Background.jpg) center / cover no-repeat;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+.btn {
+	width: 350px;
+	height: 58px;
+	border-radius: 100px;
+	align-content: center;
+	font-size: $button-fz;
+}
+
+.base-btn {
+	background-color: $base-color;
+	color: $base-second-color;
+}
+
+.additional-btn {
+	background-color: $additional-color;
+}
+
+.accent {
+	color: $base-color;
 }

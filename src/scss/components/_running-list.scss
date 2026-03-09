@@ -1,0 +1,14 @@
+.running-line {
+    padding: 25px 0;
+    background-color: $base-second-color;
+    border-top: 5px solid $base-color;
+    border-bottom: 5px solid $additional-color;
+    margin-bottom: 69px;
+    font-size: $special-fz;
+
+    &__list {
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+    }
+}

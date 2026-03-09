@@ -1,3 +1,25 @@
 .hero-section {
     padding: 240px 200px 110px 200px;
+
+    &__title {
+        font-size: $h1-fz;
+        font-weight: 500;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    &__text {
+        font-weight: 400;
+        text-align: center;
+        max-width: 535px;
+        margin: 0 auto;
+    }
+
+    &__buttons {
+        padding-top: 35px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
 }
