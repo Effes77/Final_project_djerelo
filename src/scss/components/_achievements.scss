@@ -1,0 +1,80 @@
+.achievements-section {
+    padding-top: 100px;
+
+    &__title {
+        font-size: $h2-fz;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__text-box {
+        display: flex;
+        margin-bottom: 60px;
+        gap: 20px;
+
+        &--left {
+            width: 49%;
+            font-size: $second-fz;
+        }
+
+        &--right {
+            width: 50%;
+            font-size: $h3-fz;
+            font-weight: 700;
+            align-content: center;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 143px;
+
+        &--box {
+            padding-bottom: 50px;
+
+            &:not(:nth-child(3n)) {
+                padding-right: 150px;
+            }
+        }
+
+        &--title {
+            font-size: $h2-fz;
+            line-height: $special-lh;
+            padding-bottom: 5px;
+        }
+
+        &--text {
+            font-size: $second-fz;
+        }
+    }
+
+    &__video-box {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 100px;
+        gap: 30px;
+
+        &--video {
+            width: 700px;
+            height: 398px;
+            border-radius: 15px;
+        }
+
+        &--right {
+            width: 50%;
+        }
+
+        &--title {
+            font-size: $h3-fz;
+            line-height: $title-lh;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        &--text {
+            margin-bottom: 15px;
+        }
+
+    }
+}

@@ -1,8 +1,12 @@
 .targets-section {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    flex-wrap: nowrap;
+    
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        flex-wrap: nowrap;      
+    }
 
     &__text-box {
         width: 50%;
@@ -17,7 +21,7 @@
     &__list {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
     }
 
     &__title {
@@ -33,5 +37,11 @@
     &__img-box {
         width: 50%;
         display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+        & img:nth-child(3) {
+            grid-column: 1 / 3;
+        }
     }
 }
