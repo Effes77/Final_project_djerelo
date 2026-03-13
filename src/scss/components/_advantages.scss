@@ -1,0 +1,48 @@
+.advantages-section {
+
+    &__container {
+        display: flex;
+        gap: 20px;
+
+        &-left {
+            width: 50%;
+            background-color: $base-color;
+            padding: 56px 67px 56px 56px;
+            border-radius: 30px;
+            color: $base-second-color;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &-right {
+            width: 50%;
+            background-color: $additional-color;
+            border-radius: 30px;
+            padding: 56px 67px 56px 56px;
+
+            &-accent-text {
+                font-weight: 700;
+                margin-top: 65px;
+            }
+        }
+        &:first-child p {
+                margin-bottom: 20px;
+            }
+        }
+
+    &__title {
+        font-size: $h2-fz;
+        margin-bottom: 30px;
+    }
+
+    &__btn {
+        display: flex;
+        width: 592px;
+        margin-top: 37px;
+    }
+    
+}
