@@ -75,6 +75,11 @@
         &--text {
             margin-bottom: 15px;
         }
+    }
 
+     &__buttons {
+            display: flex;
+            gap: 10px;
+            flex-direction: row;
     }
 }

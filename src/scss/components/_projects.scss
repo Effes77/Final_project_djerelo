@@ -1,0 +1,113 @@
+.projects-section {
+
+    &__title {
+        font-size: $h2-fz;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    &__galery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 1px;
+        gap: 20px;
+
+        &-item {
+            border-radius: 30px;
+            overflow: hidden;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(
+                to top,
+                rgba(1, 30, 65, 0.75),
+                rgba(1, 30, 65, 0) 60%  
+                );
+                pointer-events: none;
+            }
+
+            &.item-3::before,
+                &.item-6::before {
+                    display: none;
+                }
+
+            &-bg--base  {
+                max-height: 250px;
+                background: $base-color;
+            }
+
+            &-bg--additional  {
+                max-height: 250px;
+                background: $additional-color;
+            }
+        }
+
+            .item-1 { 
+                grid-column-start: 1;
+                grid-column-end: 1;
+                grid-row-start: 1;
+                grid-row-end: 16; 
+            }
+            
+            .item-2 { 
+                grid-column-start: 1;
+                grid-row-start: 16;
+                grid-row-end: 27; 
+            }
+
+            .item-3{ 
+                grid-column-start: 2;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 11; 
+            }
+
+            .item-4 { 
+                grid-column-start: 2;
+                grid-row-start: 11;
+                grid-row-end: 27; 
+            }
+
+            .item-5 { 
+                grid-column-start: 3;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 18; 
+            }
+
+            .item-6 { 
+                grid-column-start: 3;
+                grid-row-start: 18;
+                grid-row-end: 27; 
+            }
+
+            .item-7 { 
+                grid-column-start: 4;
+                grid-row-start: 1;
+                grid-row-end: 27; 
+            }
+
+        &-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        &-text {
+            position: absolute;
+            left: 15px;
+            bottom: 15px;
+            color: white;
+            font-weight: 500;
+            line-height: $card-lh;
+
+            &--additional {
+                color: $additional-third-color;
+            }
+        }
+    }
+}

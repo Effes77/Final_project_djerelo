@@ -23,11 +23,13 @@ a {
 }
 
 .btn {
-	width: 350px;
+	width: 345px;
 	height: 58px;
 	border-radius: 100px;
-	align-content: center;
 	font-size: $button-fz;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .base-btn {
@@ -37,6 +39,11 @@ a {
 
 .additional-btn {
 	background-color: $additional-color;
+}
+
+.transparent-btn {
+	background-color: transparent;
+	border: 1px solid $additional-third-color;
 }
 
 .accent {
