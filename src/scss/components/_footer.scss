@@ -1,0 +1,37 @@
+.footer {
+
+    &__container {
+        display: flex;
+        margin-top: 60px;
+        gap: 88px;
+    }
+
+    &__logo-coopiright {
+        display: flex;
+        flex-direction: column;
+        gap: 69px;
+    }
+
+    &__info {
+        display: flex;
+    }
+
+    &__box {
+        display: flex;
+        gap: 163px;
+        margin-bottom: 85px;
+        font-size: $second-fz;
+    }
+
+    &__box-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &--special {
+            font-size: $small-text;
+            display: flex;
+            gap: 10px;
+        }
+    }
+}

@@ -23,6 +23,11 @@
         gap: 18px;
     }
 
+    &__icon-item {
+        fill: $base-second-color;
+        stroke: $additional-third-color;
+    }
+
     &__contacts-list {
         display: flex;
         gap: 35px;
