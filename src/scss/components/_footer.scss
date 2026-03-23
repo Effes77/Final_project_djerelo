@@ -3,7 +3,7 @@
     &__container {
         display: flex;
         margin-top: 60px;
-        gap: 88px;
+        margin-bottom: 85px;
     }
 
     &__logo-coopiright {
@@ -16,17 +16,14 @@
         display: flex;
     }
 
-    &__box {
-        display: flex;
-        gap: 163px;
-        margin-bottom: 85px;
-        font-size: $second-fz;
-    }
-
     &__box-list {
         display: flex;
         flex-direction: column;
         gap: 10px;
+
+         &:not(:nth-child(4n)) {
+                padding-right: 160px;
+            }
 
         &--special {
             font-size: $small-text;
